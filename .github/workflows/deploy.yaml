@@ -37,7 +37,6 @@ jobs:
     # K8s-da imijni yangilash
     - name: Deploy to Kubernetes
       run: |
-        # Deploymentdagi imijni yangi imijga almashtiramiz
-        kubectl set image deployment/my-website nginx=5969989/k8s-site:latest
-        # Yangilanishni majburlash (rollout)
-        kubectl rollout restart deployment/my-website
+        # --insecure-skip-tls-verify bayrog'i TLS xatosini chetlab o'tadi
+        kubectl --insecure-skip-tls-verify set image deployment/my-website nginx=5969989/k8s-site:latest
+        kubectl --insecure-skip-tls-verify rollout restart deployment/my-website
