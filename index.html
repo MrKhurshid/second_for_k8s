@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Expanded HTML Page</title>
+    <title>My First VS Code page</title>
 </head>
 <body>
     <!-- Heading -->
-    <h1>Welcome to My Page</h1>
+    <h1>Bank Log AI Analyzer System</h1>
     <p>This page shows more HTML elements.</p>
 
     <!-- Image -->
-    <img src="https://via.placeholder.com/150" alt="Sample Image">
+    <img src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg" alt="Sample Image">
 
     <!-- List -->
     <h2>My Favorite Fruits</h2>
     <ul>
+    <ul style="background-color: red;">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
         <li>Apple</li>
         <li>Banana</li>
         <li>Cherry</li>
@@ -25,6 +30,35 @@
         <tr>
             <th>Name</th>
             <th>Age</th>
+            <style>
+                th {
+                    text-align: center;
+                    color: yellow;
+                }
+            </style>
+        	<tr>
+	    		<td>John Doe</td>
+	    		<td>30</td>
+		    </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>28</td>
+            </tr>
+        </tr>
+            <style>
+                th {
+                    text-align: center;
+                    color: yellow;
+                }
+            </style>
+        	<tr>
+	    		<td>John Doe</td>
+	    		<td>30</td>
+		    </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>28</td>
+            </tr>
         </tr>
         <tr>
             <td>Alice</td>
@@ -38,14 +72,15 @@
 
     <!-- Form -->
     <h2>Contact Form</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name"><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email"><br><br>
+    <form action="/submit_contact" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-        <input type="submit" value="Submit">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">Submit</button>
     </form>
 
     <!-- Link -->
